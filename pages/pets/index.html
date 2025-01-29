@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Shelter. Our Page</title>
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/modal.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon-32x32.png">
+</head>
+<body class="">
+<div class="back"></div>
+<header class="header">
+  <div class="wrapper header-wrapper">
+    <div class="header-logo">
+      <a
+          href="../main/index.html"
+          class="header-logo-link"
+      ><h1 class="header-title">Cozy House</h1>
+        <p class="header-subtitle">Shelter for pets in Boston</p>
+      </a>
+    </div>
+    <div class="header-menu-burger">
+      <img src="../../assets/icons/button/burger_pets.svg" alt="Menu">
+    </div>
+    <nav class="header-menu">
+      <div class="burger-menu">
+        <div class="header-logo-burger-menu">
+          <a href="../main/index.html"
+             class="header-logo-link"
+          ><h2 class="header-title-burger-menu">Cozy House</h2>
+            <p class="header-subtitle-burger-menu">
+              Shelter for pets in Boston
+            </p></a
+          >
+        </div>
+        <div class="header-menu-burger-burger-menu">
+          <img src="../../assets/icons/button/burger.svg" alt="Menu">
+        </div>
+      </div>
+      <ul class="header-list">
+        <li class="header-item">
+          <a
+              href="../main/index.html"
+              class="header-item-link"
+          >About the shelter</a
+          >
+        </li>
+        <li class="header-item active">
+          <a
+              href="../main/index.html"
+              class="header-item-link active"
+          >Our pets</a
+          >
+        </li>
+        <li class="header-item">
+          <a href="../main/index.html#than" class="header-item-link"
+          >Help the shelter</a
+          >
+        </li>
+        <li class="header-item">
+          <a href="#footer" class="header-item-link"
+          >Contacts</a
+          >
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<section class="section__our-friends-box">
+  <div class="container wrapper__our-friends-cards">
+    <h2 class="section__our-friends-box-title">Our friends who<br> are looking for a house</h2>
+    <div class="figure__our-friends-cards"></div>
+  </div>
+  <div class="section__our-friends-slider">
+    <button class="slider-button-to-first slider-button" disabled>&#60;&#60;</button>
+    <button class="slider-button-prev slider-button" id="prev-slider" disabled>&#60;</button>
+    <button class="slider-button-center slider-button" disabled>1</button>
+    <button class="slider-button-next slider-button">&#62;</button>
+    <button class="slider-button-doublenext slider-button">&#62;&#62;</button>
+  </div>
+</section>
+<footer class="footer" id="footer">
+  <div class="wrapper footer-wrapper">
+    <div class="footer-contacts">
+      <h2 class="footer-title footer-title-contacts">
+        For questions and suggestions
+      </h2>
+      <div class="footer-email footer-link-block">
+        <a
+            href="mailto:email@shelter.com"
+            class="footer-email-link footer-link"
+            target="_blank"
+        >
+          <img
+              src="../../assets/icons/mail.svg"
+              alt="E-mail"
+              class="footer-email-img footer-icon"
+          >
+          email@shelter.com
+        </a>
+      </div>
+      <div class="footer-phone footer-link-block">
+        <a
+            href="tel:+136745677554"
+            class="footer-phone-link footer-link"
+            target="_blank"
+        >
+          <img
+              src="../../assets/icons/telephone.svg"
+              alt="Phone"
+              class="footer-phone-img footer-icon"
+          >
+          +13 674 567 75 54
+        </a>
+      </div>
+    </div>
+    <div class="footer-location">
+      <h2 class="footer-title footer-title-location">
+        We are waiting for your visit
+      </h2>
+      <div class="footer-location-point footer-link-block">
+        <a
+            href="https://goo.gl/maps/WdLQj9BHCAEs1jCs9"
+            class="footer-location-point-link footer-link"
+            target="_blank"
+        >
+          <img
+              src="../../assets/icons/pin.svg"
+              alt="Location"
+              class="footer-location-point-img footer-icon2"
+          >
+          <span class="footer-location-point-text">
+                1 Central Street, Boston (entrance from the store)
+              </span>
+        </a>
+      </div>
+      <div class="footer-location-point footer-link-block">
+        <a
+            href="https://goo.gl/maps/4QjhYkF8SBg2Q3nt8"
+            class="footer-location-point-link footer-link"
+            target="_blank"
+        >
+          <img
+              src="../../assets/icons/pin.svg"
+              alt="Location"
+              class="footer-location-point-img footer-icon2"
+          >
+          <span class="footer-location-point-text">
+                18 South Park, London
+              </span>
+        </a>
+      </div>
+    </div>
+    <div class="footer-image">
+      <img src="../../assets/images/footer-puppy.png" alt="Good dog has fun">
+    </div>
+  </div>
+</footer>
+<script src="js/burger.js"></script>
+<script src="js/pets.js"></script>
+<script src="js/modal.js"></script>
+<script>history.replaceState({}, document.title, window.location.href.split('?')[0])</script>
+</body>
+</html>

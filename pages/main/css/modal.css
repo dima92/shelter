@@ -1,0 +1,385 @@
+.section__our-friends {
+  background-color: rgba(246, 246, 246, 1);
+  margin: auto;
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+
+.wrapper__our-friends {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title__our-friends {
+  margin: auto;
+  font-size: 35px;
+  font-family: 'Georgia';
+  letter-spacing: 0.04em;
+  line-height: 130%;
+  text-align: center;
+  font-weight: 400;
+  color: rgba(84, 84, 84, 1);
+}
+
+.our-friends-position {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.our-friends-cards {
+  display: flex;
+  width: 990px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  justify-content: space-between;
+}
+
+.slider-button {
+  border-radius: 100%;
+  border: 2px solid rgba(241, 205, 179, 1);
+  width: 52px;
+  height: 52px;
+}
+
+.slider-button-left {
+  transform: rotate(180deg);
+}
+
+.animate-left {
+  animation-name: slideinpetsleft;
+  animation-timing-function: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+  animation-duration: 1.2s;
+}
+
+@keyframes slideinpetsleft {
+  from {
+    position: relative;
+    left: 30px;
+    opacity: 0.5;
+  }
+
+  to {
+    position: relative;
+    left: 0;
+  }
+}
+
+.animate-right {
+  animation-name: slideinpetsright;
+  animation-timing-function: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+  animation-duration: 1.2s;
+}
+
+@keyframes slideinpetsright {
+  from {
+    position: relative;
+    left: -30px;
+    opacity: 0.5;
+  }
+
+  to {
+    position: relative;
+    left: 0;
+  }
+}
+
+
+.figure__our-friends-card {
+  border-radius: 9px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(250, 250, 250, 1);
+  border: 2px solid rgba(250, 250, 250, 1);
+}
+
+.figure__our-friends-card figcaption {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  letter-spacing: 0.06em;
+  font-family: 'Georgia';
+}
+
+.figure__our-friends-card:hover button {
+  background-color: rgba(241, 205, 179, 1);
+  color: rgba(250, 250, 250, 1);
+  transition-duration: 0.2s;
+}
+
+.figure__our-friends-card button {
+  font-family: 'Georgia';
+  letter-spacing: 0.06em;
+  padding: 15px 45px;
+  margin-bottom: 30px;
+  border: 2px solid rgba(241, 205, 179, 1);
+  border-radius: 100px;
+  background-color: rgba(250, 250, 250, 1);
+  color: rgba(41, 41, 41, 1);
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 130%;
+  transition-duration: 0.2s;
+}
+
+.our-friends-button-bottom {
+  margin: auto;
+  border-radius: 100px;
+  border: 2px solid rgba(241, 205, 179, 1);
+  background-color: rgba(241, 205, 179, 1);
+  padding: 15px 45px;
+}
+
+.our-friends-button-bottom:hover {
+  background-color: rgba(250, 250, 250, 1);
+  border: 2px solid rgba(241, 205, 179, 1);
+}
+
+.our-friends-button-bottom a {
+  text-decoration: none;
+  color: rgba(41, 41, 41, 1);
+  line-height: 130%;
+  font-size: 17px;
+  letter-spacing: 0.06em;
+  font-family: 'Georgia';
+}
+
+.card-none {
+  display: none;
+}
+
+.slider-button-mobile-version {
+  display: none;
+}
+
+.slider-button-hover:hover {
+  background-color: rgba(241, 205, 179, 1);
+  transition-duration: 0.4s;
+}
+
+.popup__container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  margin-top: 0;
+  background-color: rgba(41, 41, 41, 0.6);
+}
+
+.button-close-popup {
+  width: 52px;
+  height: 52px;
+  margin-left: 890px;
+  border: 2px solid rgba(241, 205, 179, 1);
+  border-radius: 100%;
+  background-color: inherit;
+}
+
+.button-close-popup::before {
+  content: url(../../../assets/icons/Vector.svg);
+
+}
+
+.popup-container-hover:hover .button-close-popup {
+  background-color: rgba(250, 250, 250, 1);
+  border: 2px solid rgba(241, 205, 179, 1);
+}
+
+.popup-card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  width: 952px;
+}
+
+.popup-position {
+  display: flex;
+  justify-content: space-between;
+  width: 900px;
+  height: 500px;
+  border-radius: 10px;
+  background-color: rgba(250, 250, 250, 1);
+}
+
+.image__pet {
+  height: 100%;
+}
+
+.pet__information {
+  width: 351px;
+  height: 362px;
+  margin-top: 50px;
+  margin-right: 20px;
+}
+
+.pet__name {
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 130%;
+  font-family: 'Arial';
+}
+
+.pet__sort {
+  font-size: 20px;
+  line-height: 115%;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  font-family: 'Arial';
+}
+
+.pet__description {
+  font-size: 15px;
+  line-height: 110%;
+  margin-bottom: 40px;
+  font-family: 'Georgia';
+}
+
+.pet__list-of-healthy {
+  margin-left: 15px;
+}
+
+.pet__list-of-healthy li {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 110%;
+  margin-bottom: 10px;
+  font-family: 'Arial';
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1279.9px) {
+  .popup-card {
+    width: 682px;
+  }
+
+  .button-close-popup {
+    margin-left: 621px;
+  }
+
+  .popup-position {
+    width: 630px;
+    height: 350px;
+  }
+
+  .pet__information {
+    width: 260px;
+    height: 303px;
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+
+  .pet__sort {
+    margin-bottom: 20px;
+  }
+
+  .pet__description {
+    margin-bottom: 20px;
+  }
+
+  .figure__our-friends-card-3 {
+    display: none;
+  }
+
+  .our-friends-cards {
+    width: 580px;
+  }
+
+  .slider-button-mobile-version {
+    display: none;
+  }
+
+  .popup-container-hover:hover .button-close-popup {
+    background-color: rgba(250, 250, 250, 1);
+    border: 2px solid rgba(241, 205, 179, 1);
+  }
+
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767.9px) {
+  .section__our-friends {
+    padding-top: 42px;
+    padding-bottom: 42px;
+  }
+
+  .popup-card {
+    width: 270px;
+  }
+
+  .image__pet {
+    width: 0;
+    height: 0;
+  }
+
+  .button-close-popup {
+    margin-left: 218px;
+  }
+
+  .popup-position {
+    width: 240px;
+    height: 341px;
+  }
+
+  .pet__information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 240px;
+    height: 341px;
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+
+  .pet__name {
+    font-size: 35px;
+  }
+
+  .pet__sort {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  .pet__description {
+    text-align: justify;
+    margin-left: 10px;
+    font-size: 13px;
+    margin-bottom: 24px;
+  }
+
+  .wrapper__our-friends {
+    align-items: center;
+    width: 300px;
+  }
+
+  .title__our-friends {
+    font-size: 25px;
+  }
+
+  .our-friends-cards {
+    width: 270px;
+    margin-top: 42px;
+    margin-bottom: 20px
+  }
+
+  .popup-container-hover:hover .button-close-popup {
+    background-color: rgba(250, 250, 250, 1);
+    border: 2px solid rgba(241, 205, 179, 1);
+  }
+
+
+  .figure__our-friends-card-2, .figure__our-friends-card-3 {
+    display: none;
+  }
+
+  .slider-button-hidden {
+    display: none;
+  }
+
+  .slider-button-mobile-version {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 42px;
+    width: 184px;
+  }
+}

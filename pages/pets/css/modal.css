@@ -1,0 +1,347 @@
+.container {
+  max-width: 1280px;
+  padding: 0 40px;
+  margin: auto;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1279.9px) {
+  .container {
+    padding: 0 30px;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767.9px) {
+  .container {
+    padding: 0 10px;
+  }
+}
+
+.section__our-friends-box {
+  margin: auto;
+  padding-top: 80px;
+  padding-bottom: 100px;
+  background-color: rgba(246, 246, 246, 1);
+}
+
+.section__our-friends-box-title {
+  width: 400px;
+  margin: auto auto 45px;
+  color: rgba(84, 84, 84, 1);
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 130%;
+  text-align: center;
+  font-family: 'Georgia';
+  letter-spacing: 0.04em;
+}
+
+.figure__our-friends-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.figure__our-friends-card {
+  border-radius: 9px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(250, 250, 250, 1);
+  border: 2px solid rgba(250, 250, 250, 1);
+  margin-bottom: 35px;
+}
+
+.figure__our-friends-card:hover {
+  border: 2px solid rgba(241, 205, 179, 1);
+  transition-duration: 0.4s;
+}
+
+.figure__our-friends-card:hover button {
+  background-color: rgba(241, 205, 179, 1);
+  color: rgba(250, 250, 250, 1);
+  transition-duration: 0.2s;
+}
+
+.figure__our-friends-card figcaption {
+  letter-spacing: 0.06em;
+  font-family: 'Georgia';
+  margin-bottom: 30px;
+  margin-top: 30px;
+  color: rgba(84, 84, 84, 1);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 0.06em;
+}
+
+.figure__our-friends-card button {
+  font-family: 'Georgia';
+  letter-spacing: 0.06em;
+  width: 187px;
+  margin-bottom: 30px;
+  padding: 15px;
+  border: 2px solid rgba(241, 205, 179, 1);
+  border-radius: 100px;
+  background-color: rgba(250, 250, 250, 1);
+  color: rgba(41, 41, 41, 1);
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+}
+
+.hide-card {
+  display: none;
+}
+
+.section__our-friends-slider {
+  width: 340px;
+  display: flex;
+  margin: 15px auto auto;
+  justify-content: space-between;
+}
+
+.slider-button {
+  border-radius: 100%;
+  border: 2px solid rgba(241, 205, 179, 1);
+  width: 52px;
+  height: 52px;
+}
+
+.slider-button:hover {
+  background-color: rgba(241, 205, 179, 1);
+  transition-duration: 0.4s;
+}
+
+.slider-button-center {
+  color: black;
+  background-color: rgba(241, 205, 179, 1);
+}
+
+.popup__container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(41, 41, 41, 0.6);
+  cursor: pointer;
+}
+
+.button-close-popup {
+  width: 52px;
+  height: 52px;
+  margin-left: 890px;
+  border: 2px solid rgba(241, 205, 179, 1);
+  border-radius: 100%;
+  background-color: inherit;
+}
+
+.button-close-popup::before {
+  content: url(../../../assets/icons/Vector.svg);
+
+}
+
+.popup-container-hover:hover .button-close-popup {
+  background-color: rgba(250, 250, 250, 1);
+  border: 2px solid rgba(241, 205, 179, 1);
+}
+
+.popup-card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  width: 952px;
+}
+
+.popup-position {
+  display: flex;
+  justify-content: space-between;
+  width: 900px;
+  height: 500px;
+  border-radius: 10px;
+  background-color: rgba(250, 250, 250, 1);
+}
+
+.image__pet {
+  height: 100%;
+}
+
+.pet__information {
+  width: 351px;
+  height: 362px;
+  margin-top: 50px;
+  margin-right: 20px;
+}
+
+.pet__name {
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 130%;
+  font-family: 'Arial';
+}
+
+.pet__sort {
+  font-size: 20px;
+  line-height: 115%;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  font-family: 'Arial';
+}
+
+.pet__description {
+  font-size: 15px;
+  line-height: 110%;
+  margin-bottom: 40px;
+  font-family: 'Georgia';
+}
+
+.pet__list-of-healthy {
+  margin-left: 15px;
+}
+
+.pet__list-of-healthy li {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 110%;
+  margin-bottom: 10px;
+  font-family: 'Arial';
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1279.9px) {
+  .section__our-friends-box {
+    padding-top: 80px;
+    padding-bottom: 76px;
+  }
+
+  .card-none-four,
+  .card-none-five {
+    display: none;
+  }
+
+  .figure__our-friends-cards {
+    margin: auto;
+    width: 580px;
+  }
+
+  .section__our-friends-box h2 {
+    margin-bottom: 30px;
+  }
+
+  .popup-card {
+    width: 682px;
+  }
+
+  .button-close-popup {
+    margin-left: 621px;
+  }
+
+  .popup-position {
+    width: 630px;
+    height: 350px;
+  }
+
+  .pet__information {
+    width: 260px;
+    height: 303px;
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+
+  .pet__sort {
+    margin-bottom: 12px;
+  }
+
+  .pet__description {
+    font-size: 13px;
+    margin-bottom: 12px;
+  }
+}
+
+@media only screen and (max-width: 767.9px) {
+  .section__our-friends-box {
+    padding-top: 42px;
+    padding-bottom: 42px;
+  }
+
+  section .section__box-color {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(49, 47, 47, 0.4);
+    width: 100%;
+    height: 814px;
+    z-index: 2;
+  }
+
+  .card-none-one,
+  .card-none-two,
+  .card-none-three,
+  .card-none-four,
+  .card-none-five {
+    display: none;
+  }
+
+  .figure__our-friends-cards {
+    margin: auto;
+    width: 279px;
+  }
+
+  .section__our-friends-box-title {
+    width: 300px;
+    margin-bottom: 42px;
+    margin-top: 0;
+    font-size: 25px;
+  }
+
+  .section__our-friends-slider {
+    width: 300px;
+  }
+
+  .popup-card {
+    width: 270px;
+  }
+
+  .image__pet {
+    width: 0;
+    height: 0;
+  }
+
+  .button-close-popup {
+    margin-left: 218px;
+  }
+
+  .popup-position {
+    width: 240px;
+    height: 341px;
+  }
+
+  .pet__information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 240px;
+    height: 341px;
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+
+  .pet__name {
+    font-size: 35px;
+  }
+
+  .pet__sort {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  .pet__description {
+    text-align: justify;
+    margin-left: 10px;
+    font-size: 13px;
+    margin-bottom: 24px;
+  }
+}
