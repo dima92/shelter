@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    <title>Shelter - Our Pets</title>
+    <script type="module" crossorigin src="/assets/js/main-D8pnqu-1.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/css/main-DbK2ABZj.css">
+  </head>
+  <body>
+    <header class="header header--light">
+      <div class="container header__container">
+        <a href="index.html" class="header__logo">
+          <div class="header__logo-title">Cozy House</div>
+          <div class="header__logo-subtitle">Shelter for pets in Boston</div>
+        </a>
+        <button class="header__burger" aria-label="Open menu">
+          <span class="header__burger-line"></span>
+        </button>
+        <nav class="header__nav">
+          <ul class="header__list header__nav--mobile">
+            <li class="header__item">
+              <a href="index.html" class="header__link">About the shelter</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link header__link--active">Our pets</a>
+            </li>
+            <li class="header__item">
+              <a href="index.html#help" class="header__link"
+                >Help the shelter</a
+              >
+            </li>
+            <li class="header__item">
+              <a href="#contacts" class="header__link">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__overlay"></div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="pets-page">
+        <div class="container pets-page__container">
+          <h1 class="pets-page__title">
+            Our friends who<br />are looking for a house
+          </h1>
+
+          <div class="pets-page__grid"></div>
+          <div class="pagination">
+            <button class="pagination__btn" id="btn-first" disabled>
+              &lt;&lt;
+            </button>
+            <button class="pagination__btn" id="btn-prev" disabled>&lt;</button>
+            <span class="pagination__btn pagination__btn--current" id="page-num"
+              >1</span
+            >
+            <button class="pagination__btn" id="btn-next">&gt;</button>
+            <button class="pagination__btn" id="btn-last">&gt;&gt;</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" id="contacts">
+      <div class="container footer__container">
+        <div class="footer__block footer__block--contacts">
+          <h2 class="footer__title">For questions and suggestions</h2>
+
+          <a href="mailto:email@shelter.com" class="footer__link">
+            <img
+              src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20437.979%20437.979'%20width='512'%20height='512'%3e%3cpath%20d='M430.479%2078.746H7.5a7.5%207.5%200%2000-7.5%207.5v265.487a7.5%207.5%200%20007.5%207.5h422.979a7.5%207.5%200%20007.5-7.5V86.246a7.5%207.5%200%2000-7.5-7.5zm-73.773%20162.177c1.173%205.316%202.386%2010.813.809%2013.54-1.694%202.927-7.169%204.629-12.463%206.275-4.177%201.298-8.495%202.641-12.344%204.868-3.719%202.152-6.936%205.167-10.046%208.083-4.282%204.015-8.326%207.806-11.982%207.806-3.657%200-7.701-3.792-11.982-7.806-3.11-2.916-6.327-5.932-10.046-8.083-3.849-2.227-8.167-3.569-12.344-4.868-5.294-1.646-10.769-3.348-12.462-6.275-1.578-2.727-.365-8.224.808-13.541.963-4.364%201.958-8.876%201.958-13.495s-.995-9.132-1.958-13.496c-1.173-5.316-2.386-10.813-.808-13.541%201.693-2.927%207.168-4.629%2012.462-6.275%204.177-1.298%208.495-2.641%2012.344-4.868%203.719-2.152%206.936-5.167%2010.046-8.083%204.281-4.014%208.325-7.806%2011.982-7.806%203.656%200%207.701%203.792%2011.982%207.806%203.11%202.916%206.327%205.931%2010.046%208.083%203.849%202.226%208.167%203.569%2012.344%204.867%205.294%201.646%2010.769%203.348%2012.462%206.275%201.578%202.727.365%208.224-.808%2013.54-.963%204.364-1.958%208.876-1.958%2013.496s.995%209.134%201.958%2013.498zm-21.679-68.745c-.69-.63-1.391-1.286-2.105-1.955-5.638-5.286-12.653-11.864-22.242-11.864s-16.605%206.578-22.242%2011.864c-2.607%202.444-5.07%204.753-7.298%206.042-2.395%201.385-5.741%202.426-9.285%203.527-7.671%202.385-16.364%205.087-20.993%2013.087-4.498%207.775-2.563%2016.546-.855%2024.284.825%203.743%201.605%207.28%201.605%2010.264s-.78%206.521-1.605%2010.264c-1.481%206.711-3.126%2014.197-.605%2021.138l-30.416%2030.783L25.452%2093.746h387.067l-77.492%2078.432zm-206.911%2046.811L15%20333.467V104.509l113.116%20114.48zm10.543%2010.67l74.991%2075.895a7.5%207.5%200%200010.67%200l35.009-35.432c3.94%202.261%208.38%203.65%2012.526%204.939%203.544%201.102%206.891%202.142%209.285%203.527%202.228%201.289%204.69%203.598%207.298%206.042%205.637%205.286%2012.653%2011.864%2022.242%2011.864%209.588%200%2016.604-6.578%2022.242-11.864%202.607-2.445%205.069-4.753%207.298-6.043%201.451-.84%203.255-1.552%205.238-2.228l67.063%2067.872H25.45l113.209-114.572zm222.306%2041.054c3.781-1.982%207.182-4.675%209.533-8.738%204.498-7.775%202.563-16.546.855-24.284-.825-3.743-1.605-7.28-1.605-10.264s.78-6.521%201.605-10.264c1.708-7.738%203.643-16.508-.856-24.284-4.629-8-13.322-10.702-20.993-13.087l-.699-.218%2074.174-75.073v228.973l-62.014-62.761z'%20data-original='%23000000'%20class='active-path'%20data-old_color='%23f1cdb3'%20fill='%23f1cdb3'/%3e%3cpath%20d='M310.68%20189.242c-21.056%200-38.186%2017.13-38.186%2038.185s17.13%2038.185%2038.186%2038.185%2038.186-17.13%2038.186-38.185-17.131-38.185-38.186-38.185zm0%2061.37c-12.784%200-23.186-10.401-23.186-23.185s10.401-23.185%2023.186-23.185%2023.186%2010.401%2023.186%2023.185-10.402%2023.185-23.186%2023.185z'%20data-original='%23000000'%20class='active-path'%20data-old_color='%23f1cdb3'%20fill='%23f1cdb3'/%3e%3c/svg%3e"
+              alt=""
+              class="footer__link-icon"
+              aria-hidden="true"
+            />
+            <span class="footer__link-text">email@shelter.com</span>
+          </a>
+
+          <a href="tel:+123456789" class="footer__link">
+            <img
+              src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20427.922%20427.922'%20width='512'%20height='512'%3e%3cpath%20d='M427.345%20139.789l-26.06-62.542a7.498%207.498%200%2000-5.041-4.375l-31.323-8.121c-91.706-23.776-210.218-23.775-301.92%200l-31.324%208.121a7.498%207.498%200%2000-5.041%204.375L.577%20139.789a7.5%207.5%200%2000-.141%205.407l10.423%2029.186a7.498%207.498%200%20008.534%204.832l99.025-19.805a7.502%207.502%200%20005.925-6.105l8.575-50.781c47.199-11.86%20114.886-11.86%20162.083%200l8.576%2050.782a7.5%207.5%200%20005.925%206.105l99.024%2019.805a7.504%207.504%200%20008.535-4.832l10.424-29.186a7.508%207.508%200%2000-.14-5.408zM22.807%20163.235l-5.35-14.981%2095.913-20.047-2.956%2017.507-87.607%2017.521zm101.527-73.962a7.497%207.497%200%2000-5.4%205.981l-2.882%2017.068-96.155%2020.098%2019.152-45.963%2027.716-7.186c89.417-23.182%20204.972-23.183%20294.393%200l27.716%207.186%2019.152%2045.963-96.155-20.098-2.882-17.068a7.5%207.5%200%2000-5.4-5.981c-51.098-14.101-128.159-14.101-179.255%200zm280.78%2073.962l-87.605-17.521-2.957-17.507%2095.913%2020.047-5.351%2014.981z'%20data-original='%23000000'%20class='active-path'%20data-old_color='%23f1cdb3'%20fill='%23f1cdb3'/%3e%3cpath%20d='M356.139%20183.878a7.501%207.501%200%2000-5.755-5.709l-51.079-10.918-6.431-41.886a7.5%207.5%200%2000-7.413-6.362h-20v-9.82c0-4.142-3.357-7.5-7.5-7.5s-7.5%203.358-7.5%207.5v9.82h-73v-9.82c0-4.142-3.357-7.5-7.5-7.5s-7.5%203.358-7.5%207.5v9.82h-20a7.5%207.5%200%2000-7.413%206.362l-6.432%2041.886-51.078%2010.918a7.501%207.501%200%2000-5.755%205.709L37.1%20340.159a7.533%207.533%200%2000-.178%201.625v31.719a7.5%207.5%200%20007.5%207.5H383.5a7.5%207.5%200%20007.5-7.5v-31.719c0-.546-.06-1.091-.178-1.625l-34.683-156.281zM85.384%20191.83l51.428-10.993a7.5%207.5%200%20005.846-6.196l6.24-40.638h130.127l6.239%2040.638a7.5%207.5%200%20005.846%206.196l51.429%2010.993%2031.615%20142.454H53.769L85.384%20191.83zM126.2%20349.284l-9.661%2016.719h-11.401l9.661-16.719H126.2zm17.325%200h163.21l-9.661%2016.719h-163.21l9.661-16.719zm-91.603%200h45.552l-9.661%2016.719H51.922v-16.719zm262.477%2016.719l9.661-16.719H376v16.719h-61.601z'%20data-original='%23000000'%20class='active-path'%20data-old_color='%23f1cdb3'%20fill='%23f1cdb3'/%3e%3cpath%20d='M213.961%20320.038c44.388%200%2080.5-36.112%2080.5-80.5s-36.112-80.5-80.5-80.5-80.5%2036.112-80.5%2080.5%2036.112%2080.5%2080.5%2080.5zm0-146c36.117%200%2065.5%2029.383%2065.5%2065.5s-29.383%2065.5-65.5%2065.5-65.5-29.383-65.5-65.5%2029.383-65.5%2065.5-65.5z'%20data-original='%23000000'%20class='active-path'%20data-old_color='%23f1cdb3'%20fill='%23f1cdb3'/%3e%3cpath%20d='M213.961%20268.091c15.744%200%2028.554-12.809%2028.554-28.554s-12.81-28.554-28.554-28.554c-15.745%200-28.555%2012.809-28.555%2028.554s12.81%2028.554%2028.555%2028.554zm0-42.108c7.474%200%2013.554%206.08%2013.554%2013.554s-6.08%2013.554-13.554%2013.554-13.555-6.08-13.555-13.554c0-7.473%206.081-13.554%2013.555-13.554z'%20data-original='%23000000'%20class='active-path'%20data-old_color='%23f1cdb3'%20fill='%23f1cdb3'/%3e%3c/svg%3e"
+              alt=""
+              class="footer__link-icon"
+              aria-hidden="true"
+            />
+            <span class="footer__link-text">+1 234 567 89</span>
+          </a>
+        </div>
+
+        <div class="footer__block footer__block--locations">
+          <h2 class="footer__title">We are waiting for your visit</h2>
+
+          <a
+            href="https://google.com"
+            target="_blank"
+            rel="noopener"
+            class="footer__link"
+          >
+            <img
+              src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20512%20512'%20width='512'%20height='512'%3e%3cpath%20d='M256%200C161.896%200%2085.333%2076.563%2085.333%20170.667c0%2028.25%207.063%2056.26%2020.49%2081.104L246.667%20506.5c1.875%203.396%205.448%205.5%209.333%205.5s7.458-2.104%209.333-5.5l140.896-254.813c13.375-24.76%2020.438-52.771%2020.438-81.021C426.667%2076.563%20350.104%200%20256%200zm131.51%20241.448L256%20479.292l-131.458-237.75c-11.698-21.646-17.875-46.156-17.875-70.875%200-82.344%2066.99-149.333%20149.333-149.333s149.333%2066.99%20149.333%20149.333c0%2024.718-6.177%2049.229-17.823%2070.781z'%20class='active-path'%20fill='%23f1cdb3'/%3e%3cpath%20d='M256%2085.333c-47.052%200-85.333%2038.281-85.333%2085.333C170.667%20217.719%20208.948%20256%20256%20256s85.333-38.281%2085.333-85.333S303.052%2085.333%20256%2085.333zm0%20149.334c-35.292%200-64-28.708-64-64s28.708-64%2064-64%2064%2028.708%2064%2064c0%2035.291-28.708%2064-64%2064z'%20class='active-path'%20fill='%23f1cdb3'/%3e%3c/svg%3e"
+              alt=""
+              class="footer__link-icon"
+              aria-hidden="true"
+            />
+            <span class="footer__link-text"
+              >1 Central Street, Boston (Headquarters)</span
+            >
+          </a>
+
+          <a
+            href="https://google.com"
+            target="_blank"
+            rel="noopener"
+            class="footer__link"
+          >
+            <img
+              src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20512%20512'%20width='512'%20height='512'%3e%3cpath%20d='M256%200C161.896%200%2085.333%2076.563%2085.333%20170.667c0%2028.25%207.063%2056.26%2020.49%2081.104L246.667%20506.5c1.875%203.396%205.448%205.5%209.333%205.5s7.458-2.104%209.333-5.5l140.896-254.813c13.375-24.76%2020.438-52.771%2020.438-81.021C426.667%2076.563%20350.104%200%20256%200zm131.51%20241.448L256%20479.292l-131.458-237.75c-11.698-21.646-17.875-46.156-17.875-70.875%200-82.344%2066.99-149.333%20149.333-149.333s149.333%2066.99%20149.333%20149.333c0%2024.718-6.177%2049.229-17.823%2070.781z'%20class='active-path'%20fill='%23f1cdb3'/%3e%3cpath%20d='M256%2085.333c-47.052%200-85.333%2038.281-85.333%2085.333C170.667%20217.719%20208.948%20256%20256%20256s85.333-38.281%2085.333-85.333S303.052%2085.333%20256%2085.333zm0%20149.334c-35.292%200-64-28.708-64-64s28.708-64%2064-64%2064%2028.708%2064%2064c0%2035.291-28.708%2064-64%2064z'%20class='active-path'%20fill='%23f1cdb3'/%3e%3c/svg%3e"
+              alt=""
+              class="footer__link-icon"
+              aria-hidden="true"
+            />
+            <span class="footer__link-text">18 South Park Street, London</span>
+          </a>
+        </div>
+
+        <div class="footer__img-wrapper">
+          <img
+            src="/assets/png/footer-puppy-DIZsPuJo.png"
+            alt="Sleeping puppy"
+            class="footer__img"
+          />
+        </div>
+      </div>
+    </footer>
+
+    <div class="popup" id="pet-popup" aria-hidden="true">
+      <div class="popup__overlay"></div>
+
+      <div class="popup__wrapper">
+        <button class="popup__close" aria-label="Close modal">
+          <svg
+            width="12"
+            height="12"
+            viewBox="0 0 12 12"
+            fill="none"
+            xmlns="http://w3.org"
+          >
+            <path
+              d="M12 1.2L10.8 0L6 4.8L1.2 0L0 1.2L4.8 6L0 10.8L1.2 12L6 7.2L10.8 12L12 10.8L7.2 6L12 1.2Z"
+            />
+          </svg>
+        </button>
+
+        <div class="popup__content">
+          <div class="popup__img-wrapper">
+            <img
+              src="/assets/png/pets-katrine-CvslKAdo.png"
+              alt="Pet photo"
+              class="popup__img"
+            />
+          </div>
+
+          <div class="popup__info">
+            <h3 class="popup__name">Katrine</h3>
+            <h4 class="popup__type-breed">Cat - British Shorthair</h4>
+            <p class="popup__description">
+              Katrine is a beautiful girl. She is gentle and affectionate and
+              loves to be near people. She is looking for a home that will give
+              her as much love as she gives back.
+            </p>
+
+            <ul class="popup__list">
+              <li class="popup__item">
+                <span class="popup__item-label">Age:</span>
+                <span class="popup__item-value">8 months</span>
+              </li>
+              <li class="popup__item">
+                <span class="popup__item-label">Inoculations:</span>
+                <span class="popup__item-value">panleukopenia</span>
+              </li>
+              <li class="popup__item">
+                <span class="popup__item-label">Diseases:</span>
+                <span class="popup__item-value">none</span>
+              </li>
+              <li class="popup__item">
+                <span class="popup__item-label">Parasites:</span>
+                <span class="popup__item-value">none</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
