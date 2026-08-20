@@ -13,7 +13,6 @@ export default defineConfig({
   },
 
   build: {
-    base: "./",
     minify: "esbuild",
     sourcemap: true,
     rollupOptions: {
