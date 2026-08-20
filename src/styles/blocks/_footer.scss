@@ -1,0 +1,114 @@
+@use "../helpers" as *;
+@use "../variables" as *;
+
+.footer {
+  background:
+    radial-gradient(110.67% 110.67% at 50% 100%, #513d2f 0%, #1a1a1c 100%),
+    #211f20;
+  padding-top: rem(40);
+  overflow: hidden;
+  width: 100%;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: rem(30);
+    width: 100%;
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: rem(280);
+    padding-top: rem(16);
+    gap: rem(40);
+  }
+
+  &__title {
+    font-family: $font-main;
+    @include fluid-text(35, 25, 1.3);
+    letter-spacing: 0.06em;
+    color: $color-light-xl;
+    font-weight: 400;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    gap: rem(20);
+    text-decoration: none;
+    color: $color-primary;
+
+    @include hover {
+      color: $color-primary-light;
+      transform: translateY(rem(-2));
+    }
+
+    &-icon {
+      width: rem(30);
+      height: auto;
+      flex-shrink: 0;
+    }
+
+    &-text {
+      font-family: $font-main;
+      font-size: rem(20);
+      line-height: 1.15;
+      letter-spacing: 0.06em;
+    }
+  }
+
+  &__img-wrapper {
+    max-width: rem(300);
+    align-self: flex-end;
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  @include respond-to("tablet") {
+    padding-top: rem(30);
+
+    &__container {
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: rem(60) rem(30);
+    }
+
+    &__block {
+      padding-top: 0;
+    }
+
+    &__img-wrapper {
+      max-width: rem(300);
+      margin-inline: auto;
+      align-self: center;
+    }
+  }
+
+  @include respond-to("mobile") {
+    padding-top: rem(30);
+
+    &__container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: rem(40);
+    }
+
+    &__block {
+      align-items: center;
+      max-width: 100%;
+      padding-inline: rem(10);
+    }
+
+    &__img-wrapper {
+      max-width: rem(260);
+    }
+  }
+}

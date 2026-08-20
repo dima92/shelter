@@ -1,0 +1,49 @@
+@use "helpers" as *;
+@use "variables" as *;
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  font-family: $font-main;
+  font-weight: 400;
+  color: $color-dark-xl;
+  background-color: $color-light-l;
+  overflow-x: hidden;
+}
+
+main {
+  flex-grow: 1;
+}
+
+button,
+input,
+textarea,
+select {
+  font-family: inherit;
+}
+
+p {
+  margin-bottom: rem(24);
+}
+
+a,
+button,
+label,
+input,
+textarea,
+select,
+svg {
+  transition-property:
+    color, background-color, border-color, transform, opacity;
+  transition-duration: $transition-duration;
+  transition-timing-function: ease-in-out;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}

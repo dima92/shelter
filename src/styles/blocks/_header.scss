@@ -1,0 +1,251 @@
+@use "../helpers" as *;
+@use "../variables" as *;
+
+.header {
+  position: absolute;
+  top: rem(60);
+  left: 0;
+  width: 100%;
+  z-index: 10;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    display: flex;
+    flex-direction: column;
+    gap: rem(10);
+    z-index: 100;
+
+    &-title {
+      font-size: rem(32);
+      line-height: 1.1;
+      letter-spacing: 0.06em;
+      font-weight: 400;
+      color: $color-primary;
+      transition: color $transition-duration ease-in-out;
+    }
+
+    &-subtitle {
+      font-family: $font-second;
+      font-size: rem(13);
+      line-height: 1.15;
+      letter-spacing: 0.1em;
+      color: $color-light-xl;
+      transition: color $transition-duration ease-in-out;
+    }
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: rem(35);
+  }
+
+  &__link {
+    font-family: $font-second;
+    font-size: rem(15);
+    line-height: 1.6;
+    color: $color-dark-s;
+
+    &:hover {
+      color: $color-light-xl;
+    }
+
+    &--active {
+      color: $color-light-xl;
+      border-bottom: 3px solid $color-primary;
+      padding-bottom: rem(3);
+    }
+  }
+
+  &__burger {
+    display: none;
+    position: relative;
+    width: rem(30);
+    height: rem(22);
+    cursor: pointer;
+    z-index: 100;
+    background: transparent;
+    border: none;
+
+    &-line,
+    &::before,
+    &::after {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: rem(2);
+      background-color: $color-primary;
+      transition:
+        transform $transition-duration ease-in-out,
+        top $transition-duration ease-in-out,
+        background-color $transition-duration ease-in-out;
+    }
+
+    &-line {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    &::before {
+      content: "";
+      top: 0;
+    }
+
+    &::after {
+      content: "";
+      bottom: 0;
+    }
+
+    &--open {
+      .header__burger-line {
+        transform: scale(0);
+      }
+      &::before {
+        top: 50%;
+        transform: translateY(-50%) rotate(90deg);
+      }
+      &::after {
+        top: 50%;
+        transform: translateY(-50%) rotate(0deg);
+      }
+    }
+  }
+  &__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(41, 41, 41, 0.6);
+    z-index: 80;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity $transition-duration ease-in-out;
+
+    &--open {
+      opacity: 1;
+      pointer-events: auto;
+    }
+  }
+
+  @include respond-to("tablet") {
+    top: rem(30);
+
+    &__container {
+      width: 100%;
+    }
+  }
+
+  @include respond-to("mobile") {
+    &__burger {
+      display: block;
+    }
+
+    &__logo {
+      &-title {
+        font-size: rem(24);
+      }
+      &-subtitle {
+        font-size: rem(11);
+      }
+    }
+
+    &__nav {
+      position: fixed;
+      top: 0;
+      right: rem(-320);
+      width: rem(320);
+      height: 100vh;
+      background-color: $color-dark-3xl;
+      z-index: 90;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-top: rem(60);
+      transition: right $transition-duration ease-in-out;
+
+      &--open {
+        right: 0;
+      }
+    }
+
+    &__list {
+      flex-direction: column;
+      gap: rem(40);
+    }
+
+    &__link {
+      font-size: rem(32);
+      line-height: 1.6;
+      color: $color-dark-s !important;
+
+      @include hover {
+        color: $color-light-xl !important;
+      }
+
+      &--active {
+        color: $color-light-xl !important;
+        border-bottom: rem(3) solid $color-primary;
+      }
+    }
+  }
+
+  &--light {
+    position: relative;
+    top: 0;
+    background-color: $color-light-xl;
+    padding-block: rem(30);
+
+    .header__logo-title {
+      color: $color-dark-3xl;
+    }
+
+    .header__logo-subtitle {
+      color: $color-dark-2xl;
+    }
+
+    .header__link {
+      color: $color-dark-l;
+
+      &:hover {
+        color: $color-dark-3xl;
+      }
+
+      &--active {
+        color: $color-dark-3xl;
+        border-bottom-color: $color-primary;
+      }
+    }
+
+    .header__burger {
+      &-line,
+      &::before,
+      &::after {
+        background-color: #000000;
+      }
+    }
+
+    &.header--nav-open,
+    &:has(.header__nav--open) {
+      .header__logo-title {
+        color: $color-primary;
+      }
+      .header__logo-subtitle {
+        color: $color-light-xl;
+      }
+      .header__burger {
+        &-line,
+        &::before,
+        &::after {
+          background-color: $color-primary;
+        }
+      }
+    }
+  }
+}

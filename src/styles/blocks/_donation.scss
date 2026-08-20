@@ -1,0 +1,128 @@
+@use "../helpers" as *;
+@use "../variables" as *;
+
+.donation {
+  background-color: $color-light-l;
+  padding-block: rem(80);
+
+  @include respond-to("tablet") {
+    padding-block: rem(60);
+
+    &__container {
+      flex-direction: column-reverse;
+      gap: rem(60);
+    }
+
+    &__content {
+      max-width: rem(505);
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  @include respond-to("mobile") {
+    padding-block: rem(42);
+
+    &__container {
+      gap: rem(42);
+    }
+
+    &__content {
+      max-width: 100%;
+      padding-inline: rem(10);
+    }
+
+    &__img-wrapper {
+      max-width: rem(260);
+    }
+
+    &__card {
+      padding: rem(15) rem(15);
+
+      &-number {
+        font-size: rem(15);
+      }
+    }
+
+    &__info {
+      text-align: justify;
+    }
+  }
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: rem(30) rem(60);
+  }
+
+  &__img-wrapper {
+    max-width: rem(505);
+    flex-shrink: 0;
+  }
+
+  &__img {
+    width: 100%;
+    height: auto;
+  }
+
+  &__content {
+    max-width: rem(380);
+  }
+
+  &__title {
+    font-family: $font-main;
+    @include fluid-text(35, 25, 1.3);
+    letter-spacing: 0.06em;
+    color: $color-dark-3xl;
+    margin-bottom: rem(20);
+  }
+
+  &__subtitle {
+    font-family: $font-main;
+    font-size: rem(15);
+    line-height: 1.1;
+    letter-spacing: 0.06em;
+    color: $color-dark-3xl;
+    font-weight: 400;
+    margin-bottom: rem(20);
+  }
+
+  &__card {
+    display: inline-flex;
+    align-items: center;
+    gap: rem(15);
+    background-color: $color-primary;
+    padding: rem(15) rem(15);
+    border-radius: rem(9);
+    margin-bottom: rem(20);
+    text-decoration: none;
+
+    @include hover {
+      background-color: $color-primary-light;
+    }
+
+    &-icon {
+      width: rem(30);
+      height: rem(23);
+    }
+
+    &-number {
+      font-family: $font-main;
+      font-size: rem(20);
+      line-height: 1.15;
+      letter-spacing: 0.06em;
+      color: $color-dark-3xl;
+    }
+  }
+
+  &__info {
+    font-family: $font-second;
+    font-style: italic;
+    font-size: rem(12);
+    line-height: 1.5;
+    color: $color-dark-m;
+  }
+}
