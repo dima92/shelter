@@ -12,4 +12,4 @@
       </article>
     `).join(""),s.textContent=o,m(p)}function m(p){o===1?(a.disabled=!0,d.disabled=!0):(a.disabled=!1,d.disabled=!1),o===p?(r.disabled=!0,t.disabled=!0):(r.disabled=!1,t.disabled=!1)}r.addEventListener("click",()=>{o++,l()}),d.addEventListener("click",()=>{o--,l()}),a.addEventListener("click",()=>{o=1,l()}),t.addEventListener("click",()=>{o=c.length/u,l()}),c=n(),l();let b;window.addEventListener("resize",()=>{clearTimeout(b),b=setTimeout(()=>{l()},200)})}v();w();L();k();
 
-//# sourceMappingURL=main-D8pnqu-1.js.map
+//# sourceMappingURL=main-DeFmjC2J.js.map
